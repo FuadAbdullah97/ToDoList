@@ -1,0 +1,142 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+
+}
+
+body{
+    /* background: rgb(69,17,213);
+    background: linear-gradient(149deg, rgba(69,17,213,1) 4%, rgba(144,0,90,1) 39%, rgba(85,0,54,1) 64%, rgba(0,0,0,1) 99%);
+    background-size: cover;     */
+}
+
+.container{
+
+    background: rgb(69,17,213);
+    background: linear-gradient(149deg, rgba(69,17,213,1) 4%, rgba(144,0,90,1) 39%, rgba(85,0,54,1) 64%, rgba(0,0,0,1) 99%);
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+}
+.card {
+    background-color: white;
+    width: 90%;
+    max-width: 470px;
+    margin: 0px auto;
+    padding: 40px 30px;
+    color: black;
+    border-radius: 10px;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header img {
+    width: 40px;
+}
+
+.todoList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    background-color: #eaedee;
+    width: 280px;
+    margin: 10px auto;
+    border-radius: 100px ;
+}
+
+.todoList input {
+    border: 0px;
+    outline: 0px;
+    width: 250px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 100px;
+    background-color: #eaedee;
+
+}
+
+.todoList button {
+
+    padding: 10px 20px;
+    border-radius: 100px;
+    background-color: orange;
+    border: none;
+    outline: none;
+
+}
+
+#listContainer {
+    width: 300px;
+    margin: 20px auto;
+    
+}
+
+
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 5px 10px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+content: '';
+position: absolute;
+height: 18px;
+width: 18px;
+border-radius: 50%;
+background-image: url(images/unchecked.png);
+background-size: cover;
+background-position: center;
+top: 6px;
+left: -20px;
+
+}
+
+ul li.checked {
+
+    color: #555;
+    text-decoration: line-through;
+
+}
+
+ul li.checked::before {
+    background-image: url(images/checked.png);
+}
+
+ul li span {
+    position: absolute;
+    resize: 0;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    color: #555;
+}
+
+#listContainer span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    padding-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 10px;
+    height: 10px;
+}
+
+#listContainer span:hover {
+
+    background-color: #e7e7e7;
+    border-radius: 50%;
+
+}
